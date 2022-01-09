@@ -50,7 +50,8 @@ The system is based around `a href` links to fullsize images, wrapping "inline-s
 
 ```
 
-On initial load, the "inline-size" images will be displayed at thumbail scale.
+On initial load, the "inline-size" images will be displayed at thumbail scale. (The script uses
+document ready to look for instances of `.blogallery`)
 
 Clicking on an image (or the gallery itself) displays all the images without much extraneous formatting
 (scrolling to the image if needed)
@@ -58,3 +59,14 @@ Clicking on an image (or the gallery itself) displays all the images without muc
 Click on an inline-size images opens up the full-screen viewer to that image, with left/right arrow and esc-key support.
 
 You can see it in action at [stuff.alienbill.com/blogallery/](https://stuff.alienbill.com/blogallery/)
+
+## improvements
+
+This was mostly meant to "scratch my own itch" on my [personal blog](https://kirk.is/) - so it is simple
+css and js files.
+
+If there is literally any expressed interest, I would consider wrapping this as package and/or allowing it 
+to be invoked programatically or a standalone mode for the fullscreen viewer.
+
+Other possible features would include swipe support (though honestly I think the current system works 
+well for mobile) but again simplicity was favored of feature richness.

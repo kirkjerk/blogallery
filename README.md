@@ -1,5 +1,7 @@
 # blogallery
-super lightweight, zero-config vanilla javascript image gallery and full screen viewer
+
+super lightweight, zero-config vanilla javascript providing progressive enhancement for
+an image gallery and full screen viewer
 
 ## rationale
 

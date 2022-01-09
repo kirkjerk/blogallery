@@ -66,7 +66,8 @@ On initial load, the "inline-size" images will be displayed at thumbail scale. (
 document ready to look for instances of `.blogallery`)
 
 Clicking on an image (or the gallery itself) displays all the images without much extraneous formatting
-(scrolling to the image if needed)
+(scrolling to the image if needed) This transition is a "one way trip"; there is no way to return to the 
+thumbnail size. 
 
 Click on an inline-size images opens up the full-screen viewer to that image, with left/right arrow and esc-key support.
 
@@ -81,4 +82,4 @@ If there is literally any expressed interest, I would consider wrapping this as 
 to be invoked programatically or a standalone mode for the fullscreen viewer.
 
 Other possible features would include swipe support (though honestly I think the current system works 
-well for mobile) but again simplicity was favored of feature richness.
+well for mobile) or some way to return to the thumbnail mode, but again, simplicity was favored of feature richness.

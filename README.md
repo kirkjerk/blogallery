@@ -7,7 +7,7 @@ I wanted a better gallery system for my blog, with 3 modes:
 
 *  small, thumbnail image gallery, clicking opens:
 *  browsable (download-friendly) size images embedded in page
-*  full-page image gallery
+*  full-page image gallery (for the raw, un-resized original photo.)
 
 (Also I wanted to minimize the amount of refactoring I had to do on older gallery pages of my blog)
 
@@ -18,6 +18,9 @@ I wanted the full size gallery to support arrow keys and be relative mobile-frie
 The system is based around `a href` links to fullsize images, wrapping "inline-size" images
 (roughly column width). Those inline-size images are displayed small when in initial thumbnail mode.
 
+Here is some sample usage. Nothing besides including the css file, the script file, and adding the 
+"blogallery" class is needed, the rest relies on one of the following structures to designate the currently
+displayed and the full size images.
 
 ```
 <link rel="stylesheet" type="text/css" href="blogallery.css" />
@@ -39,8 +42,15 @@ The system is based around `a href` links to fullsize images, wrapping "inline-s
     <figcaption>
       Caption information to be duplicated in full size gallery.
     </figcaption>    
- </figure>  
- 
+  </figure>  
+
+  <figure>
+    <img src="IMG4-INLINE-SIZE.jpg">
+    <figcaption>
+      Caption information to be duplicated in full size gallery.
+    </figcaption>    
+  </figure>  
+  
   <p>
     Additional information that will be hidden in initial gallery mode
     but displayed once the gallery is opened.

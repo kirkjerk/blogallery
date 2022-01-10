@@ -71,7 +71,7 @@ thumbnail size.
 
 Click on an inline-size images opens up the full-screen viewer to that image, with left/right arrow and esc-key support.
 
-You can see it in action at [stuff.alienbill.com/blogallery/](https://stuff.alienbill.com/blogallery/)
+You can see a demo page at [stuff.alienbill.com/blogallery/](https://stuff.alienbill.com/blogallery/) or in actual use at [kirk.is/2022/01/03/](https://kirk.is/2022/01/03/)
 
 ## improvements
 

@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         
         const updateImage = () => {
             const captionHTML = captions[currentImgPtr] ? `<div class="caption">${captions[currentImgPtr]}</div>` : ''
-            document.getElementById('mini-gallery-image-wrap').innerHTML = `${captionHTML}<img onload="this.style.backgroundImage=null;" style="background-image: url(${previewImgURLs[currentImgPtr]})" src="${imgURLs[currentImgPtr]}">`;
+            document.getElementById('mini-gallery-image-wrap').innerHTML = `${captionHTML}<img onload="this.style.backgroundImage=null;" src="${imgURLs[currentImgPtr]}" style="background-image: url(${encodeURI(previewImgURLs[currentImgPtr])})" >`; 
         }
         
         const clickLeft = () => {

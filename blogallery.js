@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         const handleKey = (event) => {
             switch(event.code){
                 case 'ArrowLeft': clickLeft(); break;
-                case 'ArrowRight': clickLeft(); break;
+                case 'ArrowRight': clickRight(); break;
                 case 'Escape': clickClose(); break;
             }
         }

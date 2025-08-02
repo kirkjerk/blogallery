@@ -35,6 +35,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
     }
     
     
+    function getFilename(path) {
+        return path.split('/').pop();
+    }
+    
     const createBigGallery = (gallery, startingA) => {
         // should probably be factored to using a single array of 3 items each rather than parallel arrays....        
         const imgURLs = [];
@@ -45,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         const mainImageForNode = {};
         
         const updateImage = () => {
-            const captionHTML = captions[currentImgPtr] ? `<div class="caption">${captions[currentImgPtr]}</div>` : ''
+            const captionHTML = captions[currentImgPtr] ? `<div class="caption">${captions[currentImgPtr]}</div>` : getFilename(imgURLs[currentImgPtr]);
             document.getElementById('mini-gallery-image-wrap').innerHTML = `${captionHTML}<img onload="this.style.backgroundImage=null;" src="${imgURLs[currentImgPtr]}" style="background-image: url(${encodeURI(previewImgURLs[currentImgPtr])})" >`; 
         }
         
@@ -77,6 +81,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 imgURLs.push(info.full);
                 previewImgURLs.push(info.preview);
                 captions.push(info.caption);
+                
         });
                 
         gallery.insertAdjacentHTML( 'beforeend', `
